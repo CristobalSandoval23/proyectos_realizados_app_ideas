@@ -10,6 +10,7 @@ import 'package:proyectos_flutter/calculadora_cubit/bloc/calculadora/calculadora
 import 'package:proyectos_flutter/calculadora_cubit/page/calculadora_cubit_page.dart';
 import 'package:proyectos_flutter/calculadora_getx/page/calculadora_getx_page.dart';
 import 'package:proyectos_flutter/calculadora_singleton/page/calculadora_singleton_page.dart';
+import 'package:proyectos_flutter/contador_palabras/page/contador_palabras_page.dart';
 import 'package:proyectos_flutter/firebase_options.dart';
 
 import 'package:proyectos_flutter/bordes_radius_preview_app/page/bordes_radius_preview_page.dart';
@@ -69,7 +70,7 @@ class MyApp extends StatelessWidget {
       ],
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: "practica_app",
+        initialRoute: "contador_palabras_app",
         routes: {
           "christma_lights": ( _ ) => const ChristmasLightsPage(),
           "bordes_radius_preview": ( _ ) => const BordesRadiusPreviewPage(),
@@ -90,6 +91,7 @@ class MyApp extends StatelessWidget {
           "pomodoro": ( _ ) =>  const PomodoroPage(),
           "squiz_app": ( _ ) =>  const SquizAppPage(),
           "practica_app": ( _ ) =>  const PracticaCRUDPage(),
+          "contador_palabras_app": ( _ ) =>  const ContadorPalabrasPage(),
         },
       ),
     );
